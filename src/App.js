@@ -11,14 +11,19 @@ function App() {
           <SideMenu/>
           <div></div>
           <section>
+            <div className="Separator"></div>
             <SectionTitle nombre="SOBRE MÍ"/>
+            <div className="TitleSeparator"></div>
             <AboutMe/>
             <div className="Separator"></div>
             <SectionTitle nombre="EXPERIENCIA"/>
+            <div className="TitleSeparator"></div>
             <div className="Separator"></div>
             <SectionTitle nombre="MIS PROYECTOS"/>
+            <div className="TitleSeparator"></div>
             <div className="Separator"></div>
             <SectionTitle nombre="CONTACTO"/>
+            <div className="TitleSeparator"></div>
           </section>
         </section>
       </header>
