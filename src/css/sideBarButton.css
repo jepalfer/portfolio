@@ -1,8 +1,21 @@
 .Side-bar-button {
     background-color: transparent;
+    font-family: 'breeserif', serif;
+    font-size: 35px;
+    height: 30%;
+    width: 75%;
+    text-align: center;
+    text-justify: center;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .Side-bar-text{
     color: #000000;
     font-size: 35px;
     font-family: 'breeserif', serif;
+}
+
+.Side-bar-button:hover {
+    color: #E2725B;
+    transform: scale(1.05);
 }

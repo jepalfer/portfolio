@@ -13,4 +13,6 @@
   height: 100%;
   width: 20%;
   position: fixed;
+  justify-items: center;
+  align-items: center;
 }

@@ -2,6 +2,8 @@ import '../css/aboutMe.css'
 import '../css/text.css'
 import React from 'react'
 import Separator from './separator';
+import GithubButton from './githubButton';
+import CvButton from './cvButton';
 
 function AboutMe() {
   return (
@@ -19,8 +21,8 @@ function AboutMe() {
       </p>
       <Separator/>
       <section className="Buttons-grid">
-        <p>Hola</p>
-        <p>Adios</p>
+        <GithubButton/>
+        <CvButton/>
       </section>
 
     </section>
