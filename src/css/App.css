@@ -1,0 +1,12 @@
+
+.Grid{
+  display: grid;
+  grid-template-columns: 20% 4.2% auto 8.1%;
+  background: black;
+}
+
+.Separator{
+  padding: 5vh;
+}
+
+

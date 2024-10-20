@@ -4,7 +4,6 @@
 }
 
 .Grid section p{
-    background-color: aquamarine;
     border-radius: 10px;
 }
 
@@ -13,9 +12,4 @@
   background-color: #ffffff;
   grid-template-rows: 100vh;
   border: 1px solid red;
-}
-
-.SideBarText{
-    color: #000000;
-    font-size: 35px;
 }
