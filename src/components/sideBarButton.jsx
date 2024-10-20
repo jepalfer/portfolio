@@ -3,9 +3,11 @@ import React from 'react'
 
 function SideBarButton({text}) {
   return (
-    <p className="SideBarText">
-        {text}
-    </p>
+    <button className="SideBarButton">
+        <text className="SideBarText">
+            {text}
+        </text>
+    </button>
   )
 }
 

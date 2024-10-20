@@ -10,7 +10,6 @@ function SideMenu() {
             <SideBarButton text = "EXPERIENCIA"/>
             <SideBarButton text = "PROYECTOS"/>
             <SideBarButton text = "CONTACTO"/>
-            
         </section>
     </aside>
   )

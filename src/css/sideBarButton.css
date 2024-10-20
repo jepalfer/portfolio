@@ -1,4 +1,6 @@
-
+.SideBarButton {
+    background-color: transparent;
+}
 .SideBarText{
     color: #000000;
     font-size: 35px;
