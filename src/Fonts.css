@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'breeserif';
+    src: url('./fonts/BreeSerif-Regular.ttf') format('truetype'); /* Ruta al archivo .ttf */
+    font-weight: normal;
+    font-style: normal;
+  }
