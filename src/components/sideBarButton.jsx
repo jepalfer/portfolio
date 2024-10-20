@@ -3,8 +3,8 @@ import React from 'react'
 
 function SideBarButton({text}) {
   return (
-    <button className="SideBarButton">
-        <text className="SideBarText">
+    <button className="Side-bar-button">
+        <text className="Side-bar-text">
             {text}
         </text>
     </button>

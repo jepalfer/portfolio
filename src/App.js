@@ -3,6 +3,8 @@ import './css/App.css';
 import SideMenu from './components/sideMenu.jsx';
 import AboutMe from './components/aboutMe.jsx';
 import SectionTitle from './components/sectionTitle.jsx';
+import Separator from './components/separator.jsx';
+import TitleSeparator from './components/titleSeparator.jsx';
 function App() {
   return (
     <div className="App">
@@ -11,19 +13,24 @@ function App() {
           <SideMenu/>
           <div></div>
           <section>
-            <div className="Separator"></div>
+            {/* About me */}
+            <Separator/>
             <SectionTitle nombre="SOBRE MÍ"/>
-            <div className="TitleSeparator"></div>
+            <TitleSeparator/>
+            <TitleSeparator/>
             <AboutMe/>
-            <div className="Separator"></div>
+            {/* Experience */}
+            <Separator/>
             <SectionTitle nombre="EXPERIENCIA"/>
-            <div className="TitleSeparator"></div>
-            <div className="Separator"></div>
+            {/* Projects */}
+            <TitleSeparator/>
+            <Separator/>
             <SectionTitle nombre="MIS PROYECTOS"/>
-            <div className="TitleSeparator"></div>
-            <div className="Separator"></div>
+            {/* Contact */}
+            <TitleSeparator/>
+            <Separator/>
             <SectionTitle nombre="CONTACTO"/>
-            <div className="TitleSeparator"></div>
+            <TitleSeparator/>
           </section>
         </section>
       </header>
