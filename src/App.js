@@ -1,5 +1,6 @@
 import './Fonts.css';
 import './css/App.css';
+import './css/projectCard.css'
 import SideMenu from './components/sideMenu.jsx';
 import AboutMe from './components/aboutMe.jsx';
 import SectionTitle from './components/sectionTitle.jsx';
@@ -7,6 +8,7 @@ import Separator from './components/separator.jsx';
 import TitleSeparator from './components/titleSeparator.jsx';
 import {useState} from 'react';
 import Experience from './components/experience.jsx';
+import ProjectCard from './components/projectCard.jsx';
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -35,12 +37,15 @@ function App() {
             {/* Experience */}
             <Separator/>
             <SectionTitle nombre="EXPERIENCIA"/>
-            <Separator/>
+            <TitleSeparator/>
             <Experience mode = {isDarkMode}/>
             {/* Projects */}
             <TitleSeparator/>
             <SectionTitle nombre="MIS PROYECTOS"/>
             <TitleSeparator/>
+            <section className="Project-cards-grid">
+              <ProjectCard mode = {isDarkMode}/>
+            </section>
             {/* Contact */}
             <TitleSeparator/>
             <Separator/>
