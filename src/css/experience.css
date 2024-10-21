@@ -1,25 +1,20 @@
-.Dark-mode-project-text {
+.Dark-mode-experience-text {
   color: #eeeeee;
 }
-.Light-mode-project-text {
+.Light-mode-experience-text {
     color: #111111;
 }
 
-.Dark-mode-project-subtitle {
-    color: #dadada
-}
 
-.Light-mode-project-subtitle {
-    color: #3e3e3e
-}
-
-.Projects-grid {
+.Experience-grid {
     display: grid;
     padding-left: 30px;
     grid-template-columns: 5% auto;
 }
 
-.Projects-content-grid {
+.Experience-content-grid {
     display: grid;
     grid-template-rows: 25% auto;
+    align-items: start;
+    margin-top: -30px;
 }
