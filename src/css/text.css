@@ -1,11 +1,12 @@
 .Title{
-    font-size: 10vh;
+    /* font-size: 10vh; */
+    font-size: xxx-large;
     color: #E2725B;
     font-family: 'breeserif', serif;
 }
 
 .Text{
-    font-size: x-large;
+    font-size: larger;
     font-family: 'breeserif', serif;
     text-align: justify;
   }

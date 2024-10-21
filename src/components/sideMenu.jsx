@@ -37,10 +37,10 @@ function SideMenu({mode, open, toggleDarkMode, toggleOpenSideBar}) {
             <section className="Toggle-buttons-grid">
               <img src={selectedArrowsImage} /* onClick={toggleOpenSideBar} */></img>
             </section>
-            <SideBarButton text = "SOBRE MÍ" mode = {mode}/>
-            <SideBarButton text = "EXPERIENCIA" mode = {mode}/>
-            <SideBarButton text = "PROYECTOS" mode = {mode}/>
-            <SideBarButton text = "CONTACTO" mode = {mode}/>
+            <SideBarButton text = "SOBRE MÍ" mode = {mode} section="#about"/>
+            <SideBarButton text = "EXPERIENCIA" mode = {mode} section="#experience"/>
+            <SideBarButton text = "PROYECTOS" mode = {mode} section="#projects"/>
+            <SideBarButton text = "CONTACTO" mode = {mode} section="#contact"/>
             <section className="Toggle-buttons-grid">
               <img src={selectedModeImage} onClick={toggleDarkMode}></img>
             </section>

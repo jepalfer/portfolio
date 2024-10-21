@@ -30,27 +30,36 @@ function App() {
           <section>
             {/* About me */}
             <Separator/>
-            <SectionTitle nombre="SOBRE MÍ"/>
-            <TitleSeparator/>
-            <TitleSeparator/>
-            <AboutMe mode={isDarkMode}/>
+            <section id="#about">
+              <SectionTitle nombre="SOBRE MÍ"/>
+              <TitleSeparator/>
+              <TitleSeparator/>
+              <AboutMe mode={isDarkMode}/>
+            </section>
             {/* Experience */}
             <Separator/>
-            <SectionTitle nombre="EXPERIENCIA"/>
-            <TitleSeparator/>
-            <Experience mode = {isDarkMode}/>
+            <section id="#experience">
+              <SectionTitle nombre="EXPERIENCIA"/>
+              <TitleSeparator/>
+              <Experience mode = {isDarkMode}/>
+            </section>
             {/* Projects */}
             <TitleSeparator/>
-            <SectionTitle nombre="MIS PROYECTOS"/>
-            <TitleSeparator/>
-            <section className="Project-cards-grid">
-              <ProjectCard mode = {isDarkMode}/>
+
+            <section id="#projects">
+              <SectionTitle nombre="MIS PROYECTOS"/>
+              <TitleSeparator/>
+              <section className="Project-cards-grid">
+                <ProjectCard mode = {isDarkMode}/>
+              </section>
             </section>
             {/* Contact */}
             <TitleSeparator/>
             <Separator/>
-            <SectionTitle nombre="CONTACTO"/>
-            <TitleSeparator/>
+            <section id="#contact">
+              <SectionTitle nombre="CONTACTO"/>
+              <TitleSeparator/>
+            </section>
           </section>
         </section>
       </header>
