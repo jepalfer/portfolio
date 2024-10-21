@@ -6,6 +6,7 @@ import SectionTitle from './components/sectionTitle.jsx';
 import Separator from './components/separator.jsx';
 import TitleSeparator from './components/titleSeparator.jsx';
 import {useState} from 'react';
+import Experience from './components/experience.jsx';
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -34,10 +35,12 @@ function App() {
             {/* Experience */}
             <Separator/>
             <SectionTitle nombre="EXPERIENCIA"/>
+            <Separator/>
+            <Experience mode = {isDarkMode}/>
             {/* Projects */}
             <TitleSeparator/>
-            <Separator/>
             <SectionTitle nombre="MIS PROYECTOS"/>
+            <TitleSeparator/>
             {/* Contact */}
             <TitleSeparator/>
             <Separator/>

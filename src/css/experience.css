@@ -1,0 +1,25 @@
+.Dark-mode-project-text {
+  color: #eeeeee;
+}
+.Light-mode-project-text {
+    color: #111111;
+}
+
+.Dark-mode-project-subtitle {
+    color: #dadada
+}
+
+.Light-mode-project-subtitle {
+    color: #3e3e3e
+}
+
+.Projects-grid {
+    display: grid;
+    padding-left: 30px;
+    grid-template-columns: 5% auto;
+}
+
+.Projects-content-grid {
+    display: grid;
+    grid-template-rows: 25% auto;
+}
