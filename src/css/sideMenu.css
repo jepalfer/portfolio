@@ -14,12 +14,17 @@
   position: fixed;
   justify-items: center;
   align-items: center;
+  grid-template-rows: 15% 17.5% 17.5% 17.5% 17.5% 15%;
 }
 
+.Toggle-buttons-grid {
+  justify-self: right;
+  padding-right: 20px;
+}
 .Dark-mode-side-bar {
-  background-color: #ffffff;
+  background-color: #eee;
 }
 
 .Light-mode-side-bar {
-  background-color: #000000;
+  background-color: #111;
 }

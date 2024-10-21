@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <section className={`Grid ${isDarkMode ? "Dark-mode-grid" : "Light-mode-grid"}`}>
-          <SideMenu mode={isDarkMode}/>
+          <SideMenu mode={isDarkMode} open={isOpen} toggleDarkMode={toggleDarkMode} toggleOpenSideBar={toggleSideBar}/>
           <div></div>
           <section>
             {/* About me */}

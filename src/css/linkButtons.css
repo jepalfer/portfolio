@@ -14,13 +14,13 @@
 }
 
 .Dark-mode-link-button {
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #eeeeee;
+    color: #eeeeee;
 }
 
 .Light-mode-link-button {
-    border: 2px solid black;
-    color: black;
+    border: 2px solid #111111;
+    color: #111111;
 }
 
 .CV-button {
@@ -33,9 +33,16 @@
     border-color: #E2725B;
     color: #E2725B;
 }
+
+.Link-button:hover img {
+    filter: grayscale(0%) sepia(10%) hue-rotate(20deg) saturate(6) brightness(1.2) contrast(0.9); /* Ajusta los valores para obtener el tono de color deseado */
+}
+
 .Logo {
     width: 40px;
     height: 40px;
+    filter: grayscale(100%); /* Convierte la imagen a escala de grises por defecto */
+  
 }
 
 .Button-grid {
