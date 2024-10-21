@@ -5,10 +5,10 @@ import Separator from './separator';
 import GithubButton from './githubButton';
 import CvButton from './cvButton';
 
-function AboutMe() {
+function AboutMe({mode}) {
   return (
     <section>
-      <p className="text"> 
+      <p className={`Text ${mode ? "Dark-mode-about-text" : "Light-mode-about-text"}`}> 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis dui magna. Sed venenatis lorem fermentum diam fermentum, eu ornare felis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris in mi odio. Quisque vitae placerat quam, vitae tincidunt arcu. Fusce vitae laoreet lorem, vel tincidunt quam. Sed magna felis, scelerisque eu turpis non, rhoncus venenatis elit. Proin sed tellus orci. Aenean ligula est, gravida non quam sit amet, rutrum rutrum ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis dapibus facilisis orci, vestibulum dictum nisi lacinia quis.
 
         Vivamus imperdiet lobortis dui, vitae pulvinar lacus tristique at. Donec placerat nisi erat, facilisis maximus diam scelerisque vitae. Vivamus purus mi, varius sit amet aliquam a, vulputate ac velit. Aenean sit amet nulla dignissim, pretium massa non, consectetur eros. Praesent varius gravida laoreet. Donec blandit libero leo, eu consequat lectus eleifend in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent mollis nibh sit amet mi volutpat aliquet. Vivamus blandit orci non libero luctus, ac ullamcorper elit condimentum. Morbi sagittis, ipsum sed auctor pharetra, ex eros scelerisque odio, nec aliquet arcu risus vel diam. Suspendisse aliquam ac purus at bibendum. Ut viverra finibus odio, at bibendum mi hendrerit non. Fusce libero leo, aliquet in tincidunt at, facilisis et nibh. Aenean accumsan tincidunt velit quis semper.
@@ -21,8 +21,8 @@ function AboutMe() {
       </p>
       <Separator/>
       <section className="Buttons-grid">
-        <GithubButton/>
-        <CvButton/>
+        <GithubButton mode = {mode}/>
+        <CvButton mode = {mode}/>
       </section>
 
     </section>

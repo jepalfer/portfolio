@@ -3,7 +3,7 @@ import React from 'react'
 
 function SectionTitle({nombre}) {
   return (
-    <text className="title">
+    <text className="Title">
         {nombre}
     </text>
   )

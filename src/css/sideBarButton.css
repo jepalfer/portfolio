@@ -10,7 +10,6 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .Side-bar-text{
-    color: #000000;
     font-size: 35px;
     font-family: 'breeserif', serif;
 }
@@ -18,4 +17,12 @@
 .Side-bar-button:hover {
     color: #E2725B;
     transform: scale(1.05);
+}
+
+.Dark-mode-side-bar-button {
+    color: #000000;
+}
+
+.Light-mode-side-bar-button {
+    color: #ffffff;
 }

@@ -1,5 +1,4 @@
-.text{
-  color: white;
+.Text{
   font-size: x-large;
   font-family: 'breeserif', serif;
   text-align: justify;
@@ -10,4 +9,12 @@
   grid-template-columns: 50% 50%;
   align-items: center;
   justify-items: center;
+}
+
+.Dark-mode-about-text {
+  color: #ffffff;
+}
+
+.Light-mode-about-text {
+  color: #000000;
 }

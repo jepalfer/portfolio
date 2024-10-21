@@ -1,8 +1,14 @@
-
 .Grid{
   display: grid;
   grid-template-columns: 20% 4.2% auto 8.1%;
+}
+
+.Dark-mode-grid {
   background: black;
+}
+
+.Light-mode-grid {
+  background: white;
 }
 
 

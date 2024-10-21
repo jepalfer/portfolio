@@ -5,12 +5,24 @@ import AboutMe from './components/aboutMe.jsx';
 import SectionTitle from './components/sectionTitle.jsx';
 import Separator from './components/separator.jsx';
 import TitleSeparator from './components/titleSeparator.jsx';
+import {useState} from 'react';
 function App() {
+  const [isOpen, setIsOpen] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleSideBar = () => {
+    setIsOpen(!isOpen);
+  }
+  
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <section className="Grid">
-          <SideMenu/>
+        <section className={`Grid ${isDarkMode ? "Dark-mode-grid" : "Light-mode-grid"}`}>
+          <SideMenu mode={isDarkMode}/>
           <div></div>
           <section>
             {/* About me */}
@@ -18,7 +30,7 @@ function App() {
             <SectionTitle nombre="SOBRE MÍ"/>
             <TitleSeparator/>
             <TitleSeparator/>
-            <AboutMe/>
+            <AboutMe mode={isDarkMode}/>
             {/* Experience */}
             <Separator/>
             <SectionTitle nombre="EXPERIENCIA"/>
