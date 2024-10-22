@@ -16,7 +16,7 @@ import previousProjectBlack from './assets/images/previousProjectBlack.png'
 import nextProjectWhite from './assets/images/nextProjectWhite.png'
 import nextProjectBlack from './assets/images/nextProjectBlack.png'
 import soulsweeper from './assets/images/soulSweeper.png'
-import portfolio from './assets/images/portfolio.jpg'
+import portfolio from './assets/images/portfolio.png'
 import Contact from './components/contact.jsx';
 
 function App() {
