@@ -16,6 +16,7 @@ import previousProjectBlack from './assets/images/previousProjectBlack.png'
 import nextProjectWhite from './assets/images/nextProjectWhite.png'
 import nextProjectBlack from './assets/images/nextProjectBlack.png'
 import soulsweeper from './assets/images/soulSweeper.png'
+import portfolio from './assets/images/portfolio.jpg'
 import Contact from './components/contact.jsx';
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
     "Soulsweeper"
   ];
   const images = [chessUI, 
-    chessUI, 
+    portfolio, 
     soulsweeper
   ];
   const texts = ["Elemental chess es un videojuego comercial realizado en Unity que consiste en un ajedrez con tipos elementales, cada uno con una o varias debilidades, tal y como si fuera Pokémon. La UI ha sido diseñada en su totalidad con Figma.", 
