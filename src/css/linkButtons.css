@@ -1,5 +1,5 @@
 .Link-button {
-    border-radius: 45px;
+    border-radius: 1em;
     background: none;
     transition: transform 0.3s ease, border-color 0.3s ease;
     font-size: 5vh;
@@ -8,10 +8,6 @@
     text-decoration-thickness: 0;
 }
 
-.Github-button {
-    width: 40vh;
-    height: 10vh;
-}
 
 .Dark-mode-link-button {
     border: 2px solid #eeeeee;
@@ -23,11 +19,36 @@
     color: #111111;
 }
 
+.Github-button {
+    width: 15vw;
+    height: 5vw;
+}
 .CV-button {
-    width: 25vh;
-    height: 10vh;
+    width: 10vw;
+    height: 5vw;
 }
 
+
+.Logo {
+    width: 3vw;
+    height: 3vw;  
+}
+/*
+.Github-button {
+    width: 7em;
+    height: 2em;
+}
+
+.CV-button {
+    width: 4em;
+    height: 2em;
+}
+
+.Logo {
+    width: 1.25em;
+    height: 1.25em;  
+}
+*/
 .Link-button:hover {
     transform: scale(1.05);
     border-color: #E2725B;
@@ -35,13 +56,9 @@
 }
 
 .Link-button:hover img {
-    filter: invert(20%) sepia(28%) saturate(4828%) hue-rotate(321deg) brightness(93%) contrast(90%);}
-
-.Logo {
-    width: 40px;
-    height: 40px;
-  
+    filter: invert(20%) sepia(28%) saturate(4828%) hue-rotate(321deg) brightness(93%) contrast(90%);
 }
+
 
 .Button-grid {
     display: grid;
