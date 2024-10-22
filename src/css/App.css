@@ -1,6 +1,11 @@
-.Grid{
+.Grid-open{
   display: grid;
   grid-template-columns: 20% 4.2% auto 8.1%;
+}
+
+.Grid-closed{
+  display: grid;
+  grid-template-columns: auto 8.1%;
 }
 
 .Dark-mode-grid {

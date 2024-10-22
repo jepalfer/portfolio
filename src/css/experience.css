@@ -8,13 +8,13 @@
 
 .Experience-grid {
     display: grid;
-    padding-left: 30px;
+    padding-left: 2em;
     grid-template-columns: 5% auto;
 }
 
 .Experience-content-grid {
     display: grid;
-    grid-template-rows: 25% auto;
-    align-items: start;
+    grid-template-rows: 15% 10% auto;
+    /* align-items: start; */
     margin-top: -30px;
 }

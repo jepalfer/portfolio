@@ -9,9 +9,56 @@ import TitleSeparator from './components/titleSeparator.jsx';
 import {useState} from 'react';
 import Experience from './components/experience.jsx';
 import ProjectCard from './components/projectCard.jsx';
+import chessUI from './assets/images/chessUI.jpg'
+import indicator from './assets/images/projectIndicatorBlack.png'
+import previousProjectWhite from './assets/images/previousProjectWhite.png'
+import previousProjectBlack from './assets/images/previousProjectBlack.png'
+import nextProjectWhite from './assets/images/nextProjectWhite.png'
+import nextProjectBlack from './assets/images/nextProjectBlack.png'
+import soulsweeper from './assets/images/soulSweeper.png'
+import Contact from './components/contact.jsx';
+
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(true);
+
+
+  const titles = ["Elemental chess", 
+    "Portfolio personal", 
+    "Soulsweeper"
+  ];
+  const images = [chessUI, 
+    chessUI, 
+    soulsweeper
+  ];
+  const texts = ["Elemental chess es un videojuego comercial realizado en Unity que consiste en un ajedrez con tipos elementales, cada uno con una o varias debilidades, tal y como si fuera Pokémon. La UI ha sido diseñada en su totalidad con Figma.", 
+    "Este portfolio ha sido creado con la intención de aprender el framework React, a la vez que sirve para mostrar mis proyectos personales al resto del mundo. Ha sido diseñado enteramente con Figma.", 
+    "Soulsweeper es un videojuego realizado en Unity a modo de proyecto personal y no es comercial. Consiste en una recreación del famoso buscaminas, con selector de niveles de dificultad, modo contrarreloj y tabla de puntuaciones"
+  ];
+  
+  const [index, setIndex] = useState(0); // Estado para manejar el índice actual del proyecto
+  const [selectedTitle, setSelectedTitle] = useState(titles[0]); // Estado para el título
+  const [selectedImage, setSelectedImage] = useState(images[0]); // Estado para la imagen
+  const [selectedText, setSelectedText] = useState(texts[0]); // Estado para el texto
+
+  
+
+  function changeProject(newIndex) {
+    if (newIndex < 0){
+      newIndex = (titles.length - 1);
+    }
+    else {
+      if (newIndex == titles.length) {
+        newIndex = 0;
+      }
+    }
+    // Actualizamos el índice y los estados correspondientes
+    setIndex(newIndex);
+    setSelectedTitle(titles[newIndex]);
+    setSelectedImage(images[newIndex]);
+    setSelectedText(texts[newIndex]);
+  }
+
 
   const toggleSideBar = () => {
     setIsOpen(!isOpen);
@@ -23,14 +70,14 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <section className={`Grid ${isDarkMode ? "Dark-mode-grid" : "Light-mode-grid"}`}>
+      <header className="App-header" id="#about">
+        <section className={`${isOpen ? "Grid-open" : "Grid-closed"} ${isDarkMode ? "Dark-mode-grid" : "Light-mode-grid"}`}>
           <SideMenu mode={isDarkMode} open={isOpen} toggleDarkMode={toggleDarkMode} toggleOpenSideBar={toggleSideBar}/>
           <div></div>
           <section>
             {/* About me */}
             <Separator/>
-            <section id="#about">
+            <section>
               <SectionTitle nombre="SOBRE MÍ"/>
               <TitleSeparator/>
               <TitleSeparator/>
@@ -50,7 +97,13 @@ function App() {
               <SectionTitle nombre="MIS PROYECTOS"/>
               <TitleSeparator/>
               <section className="Project-cards-grid">
-                <ProjectCard mode = {isDarkMode}/>
+                <button className="Change-project-button" onClick={() => changeProject(index - 1)}>
+                  <img src={`${isDarkMode ? previousProjectWhite : previousProjectBlack}`}></img>
+                </button>
+                <ProjectCard mode = {isDarkMode} title={selectedTitle} image={selectedImage} text={selectedText}/>
+                <button className="Change-project-button" onClick={() => changeProject(index + 1)}>
+                  <img src={`${isDarkMode ? nextProjectWhite : nextProjectBlack}`}></img>
+                </button>
               </section>
             </section>
             {/* Contact */}
@@ -59,6 +112,7 @@ function App() {
             <section id="#contact">
               <SectionTitle nombre="CONTACTO"/>
               <TitleSeparator/>
+              <Contact/>
             </section>
           </section>
         </section>

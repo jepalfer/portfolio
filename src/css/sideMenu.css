@@ -10,7 +10,7 @@
 .Side-bar-grid{
   display: grid;
   height: 100%;
-  width: 22%;
+  width: 20%;
   position: fixed;
   justify-items: center;
   align-items: center;
@@ -19,7 +19,6 @@
 
 .Toggle-buttons-grid {
   justify-self: right;
-  padding-right: 20px;
 }
 .Dark-mode-side-bar {
   background-color: #eee;

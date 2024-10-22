@@ -5,8 +5,10 @@ import brightWhiteButton from '../assets/images/brightWhite.png'
 import brightBlackButton from '../assets/images/brightBlack.png'
 import darkWhiteButton from '../assets/images/darkWhite.png'
 import darkBlackButton from '../assets/images/darkBlack.png'
-import blackArrows from '../assets/images/blackArrows.png'
-import whiteArrows from '../assets/images/whiteArrows.png'
+import blackArrowsClose from '../assets/images/blackArrowsClose.png'
+import whiteArrowsClose from '../assets/images/whiteArrowsClose.png'
+import blackArrowsOpen from '../assets/images/blackArrowsOpen.png'
+import whiteArrowsOpen from '../assets/images/whiteArrowsOpen.png'
 
 function SideMenu({mode, open, toggleDarkMode, toggleOpenSideBar}) {
   let selectedModeImage;
@@ -14,29 +16,30 @@ function SideMenu({mode, open, toggleDarkMode, toggleOpenSideBar}) {
   if (open) {
     if (mode){
       selectedModeImage = darkBlackButton;
-      selectedArrowsImage = blackArrows;
+      selectedArrowsImage = blackArrowsClose;
     }
     else{
       selectedModeImage = brightWhiteButton;
-      selectedArrowsImage = whiteArrows;
+      selectedArrowsImage = whiteArrowsClose;
     }
   }
   else {
     if (mode){
       selectedModeImage = darkWhiteButton;
-      selectedArrowsImage = whiteArrows;
+      selectedArrowsImage = whiteArrowsClose;
     }
     else{
       selectedModeImage = brightBlackButton;
-      selectedArrowsImage = blackArrows;
+      selectedArrowsImage = blackArrowsClose;
     }
   }
   return (
     <aside className ="Side-bar">
         <section className={`Side-bar-grid ${mode ? "Dark-mode-side-bar" : "Light-mode-side-bar"}`}>
-            <section className="Toggle-buttons-grid">
-              <img src={selectedArrowsImage} /* onClick={toggleOpenSideBar} */></img>
-            </section>
+            {/*<section className="Toggle-buttons-grid">*/}
+            {/*  <img src={selectedArrowsImage} onClick={toggleOpenSideBar}></img>*/}
+            {/*</section>*/}
+            <div></div>
             <SideBarButton text = "SOBRE MÍ" mode = {mode} section="#about"/>
             <SideBarButton text = "EXPERIENCIA" mode = {mode} section="#experience"/>
             <SideBarButton text = "PROYECTOS" mode = {mode} section="#projects"/>
