@@ -1,12 +1,11 @@
 .Project-card {
-    width: 100%;
-    height: 100%;
+    height: 30vw;
     border-radius: 1.0vw;
     display: grid;
     justify-items: right;
     align-items: center;
     padding: 1vw;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 50% auto;
 }
 
 .Dark-mode-project-card {
@@ -17,14 +16,14 @@
     background-color: #111;
 }
 
-.Dark-mode-project-image-border {
-    border: 2px solid #111;
+.Project-content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 10% auto 10%;
+    /* align-items: center; */
+    justify-content: center;
 }
-
-.Light-mode-project-image-border {
-    border: 2px solid #eee;
-}
-
 
 .Dark-mode-project-text {
     color: #111;
@@ -39,9 +38,9 @@
 }
 
 .Project-image {
-    width: 75%;
+    width: 90%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: scale-down;
 }
 
 .Project-text {
