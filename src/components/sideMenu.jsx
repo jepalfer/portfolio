@@ -9,7 +9,8 @@ import blackArrowsClose from '../assets/images/blackArrowsClose.png'
 import whiteArrowsClose from '../assets/images/whiteArrowsClose.png'
 import blackArrowsOpen from '../assets/images/blackArrowsOpen.png'
 import whiteArrowsOpen from '../assets/images/whiteArrowsOpen.png'
-
+import whiteLogo from '../assets/images/logoWhite.png'
+import blackLogo from '../assets/images/logoBlack.png'
 function SideMenu({mode, open, toggleDarkMode, toggleOpenSideBar}) {
   let selectedModeImage;
   let selectedArrowsImage;
@@ -36,10 +37,8 @@ function SideMenu({mode, open, toggleDarkMode, toggleOpenSideBar}) {
   return (
     <aside className ="Side-bar">
         <section className={`Side-bar-grid ${mode ? "Dark-mode-side-bar" : "Light-mode-side-bar"}`}>
-            {/*<section className="Toggle-buttons-grid">*/}
-            {/*  <img src={selectedArrowsImage} onClick={toggleOpenSideBar}></img>*/}
-            {/*</section>*/}
-            <div></div>
+            <img className="Personalized-logo" src={`${mode ? blackLogo : whiteLogo}`}></img>
+            {/* <div></div> */}
             <SideBarButton text = "SOBRE MÍ" mode = {mode} section="#about"/>
             <SideBarButton text = "EXPERIENCIA" mode = {mode} section="#experience"/>
             <SideBarButton text = "PROYECTOS" mode = {mode} section="#projects"/>

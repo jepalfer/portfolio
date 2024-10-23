@@ -14,7 +14,11 @@
   position: fixed;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 15% 17.5% 17.5% 17.5% 17.5% 15%;
+  grid-template-rows: 10% 18.75% 18.75% 18.75% 18.75% 15%;
+}
+
+.Personalized-logo {
+  height: 50%;
 }
 
 .Toggle-buttons-grid {
