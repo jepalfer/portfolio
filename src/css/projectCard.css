@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 20% 10% auto 10%;
+    grid-template-rows: 12.5% auto 57.5% 10%;
     /* align-items: center; */
     justify-content: center;
 }
@@ -64,3 +64,11 @@
 .Light-mode-project-card-text {
     color: #eee;  
 } 
+
+.Project-technologies {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}

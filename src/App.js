@@ -6,7 +6,7 @@ import AboutMe from './components/aboutMe.jsx';
 import SectionTitle from './components/sectionTitle.jsx';
 import Separator from './components/separator.jsx';
 import TitleSeparator from './components/titleSeparator.jsx';
-import {useState} from 'react';
+import React, {useState} from 'react';
 import Experience from './components/experience.jsx';
 import ProjectCard from './components/projectCard.jsx';
 import chessUI from './assets/images/chessUI.jpg'
@@ -18,11 +18,16 @@ import nextProjectBlack from './assets/images/nextProjectBlack.png'
 import soulsweeper from './assets/images/soulSweeper.png'
 import portfolio from './assets/images/portfolio.png'
 import Contact from './components/contact.jsx';
+import GithubButton from './components/githubButton.jsx';
+import UnityTechnology from './components/unityTechnology.jsx';
+import CodeButton from './components/codeButton.jsx';
+import ReactTechnology from './components/reactTechnology.jsx';
+import DownloadButton from './components/downloadButton.jsx';
+import WebButton from './components/webButton.jsx';
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(true);
-
 
   const titles = ["Elemental chess", 
     "Portfolio personal", 
@@ -36,12 +41,23 @@ function App() {
     "Este portfolio ha sido creado con la intención de aprender el framework React, a la vez que sirve para mostrar mis proyectos personales al resto del mundo. Ha sido diseñado enteramente con Figma.", 
     "Soulsweeper es un videojuego realizado en Unity a modo de proyecto personal y no es comercial. Consiste en una recreación del famoso buscaminas, con selector de niveles de dificultad, modo contrarreloj y tabla de puntuaciones"
   ];
+
+  const technologies = [[<UnityTechnology mode={isDarkMode}/>], 
+                        [<ReactTechnology mode={isDarkMode}/>], 
+                        [<UnityTechnology mode={isDarkMode}/>]
+  ];
+  const buttons = [[<CodeButton/>, <DownloadButton/>, <WebButton/>],
+                   [<CodeButton/>],
+                   [<CodeButton/>, <DownloadButton/>, <WebButton/>]
+
+  ];
   
   const [index, setIndex] = useState(0); // Estado para manejar el índice actual del proyecto
   const [selectedTitle, setSelectedTitle] = useState(titles[0]); // Estado para el título
   const [selectedImage, setSelectedImage] = useState(images[0]); // Estado para la imagen
   const [selectedText, setSelectedText] = useState(texts[0]); // Estado para el texto
-
+  const [selectedTechnologies, setSelectedTechnologies] = useState(technologies[0]);
+  const [selectedButtons, setSelectedButtons] = useState(buttons[0]);
   
 
   function changeProject(newIndex) {
@@ -58,6 +74,8 @@ function App() {
     setSelectedTitle(titles[newIndex]);
     setSelectedImage(images[newIndex]);
     setSelectedText(texts[newIndex]);
+    setSelectedTechnologies(technologies[newIndex]);
+    setSelectedButtons(buttons[newIndex]);
   }
 
 
@@ -101,7 +119,8 @@ function App() {
                 <button className="Change-project-button" onClick={() => changeProject(index - 1)}>
                   <img src={`${isDarkMode ? previousProjectWhite : previousProjectBlack}`}></img>
                 </button>
-                <ProjectCard mode = {isDarkMode} title={selectedTitle} image={selectedImage} text={selectedText}/>
+                <ProjectCard mode = {isDarkMode} title={selectedTitle} image={selectedImage} text={selectedText} 
+                technologies={selectedTechnologies} buttons={selectedButtons}/>
                 <button className="Change-project-button" onClick={() => changeProject(index + 1)}>
                   <img src={`${isDarkMode ? nextProjectWhite : nextProjectBlack}`}></img>
                 </button>
@@ -115,6 +134,9 @@ function App() {
               <TitleSeparator/>
               <Contact/>
             </section>
+
+            <ReactTechnology mode={isDarkMode}/>
+            <UnityTechnology mode={isDarkMode}/>
           </section>
         </section>
       </header>

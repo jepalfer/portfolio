@@ -1,0 +1,38 @@
+.Grid-technology {
+    display: grid;
+    grid-template-columns: 5% 20% 5% 70%;
+    border-radius: 1em;
+    height: 75%;
+    width: 75%;
+    align-items: center;
+    /* justify-items: center; */
+}
+
+.Technology-text {
+    font-size: 1.5em;
+    font-family: 'breeserif', serif;
+}
+
+.Technology-logo {
+    width: 95%;
+    height: 95%;
+    object-fit: scale-down;
+}
+
+.Dark-mode-technology {
+    border: 0.125em solid #555555;
+    background-color: #111111;
+}
+
+.Light-mode-technology {
+    border: 0.125em solid #aaaaaa;
+    background-color: #eeeeee;
+}
+
+.Dark-mode-technology-text {
+    color: #eeeeee;
+}
+
+.Light-mode-technology-text {
+    color: #111111;
+}
