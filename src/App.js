@@ -46,9 +46,9 @@ function App() {
                         [<ReactTechnology mode={isDarkMode}/>], 
                         [<UnityTechnology mode={isDarkMode}/>]
   ];
-  const buttons = [[<CodeButton/>, <DownloadButton/>, <WebButton/>],
-                   [<CodeButton/>],
-                   [<CodeButton/>, <DownloadButton/>, <WebButton/>]
+  const buttons = [[<CodeButton mode={isDarkMode}/>, <WebButton mode={isDarkMode}/>],
+                   [<CodeButton mode={isDarkMode}/>],
+                   [<CodeButton mode={isDarkMode}/>]
 
   ];
   
@@ -132,11 +132,8 @@ function App() {
             <section id="#contact">
               <SectionTitle nombre="CONTACTO"/>
               <TitleSeparator/>
-              <Contact/>
+              {/* <Contact/> */}
             </section>
-
-            <ReactTechnology mode={isDarkMode}/>
-            <UnityTechnology mode={isDarkMode}/>
           </section>
         </section>
       </header>

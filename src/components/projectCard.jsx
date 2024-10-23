@@ -19,6 +19,9 @@ function ProjectCard({mode, title, image, text, technologies, buttons}) {
           </article>
           
           <section className="Project-buttons">
+            {buttons.map((ButtonComponent, index) => 
+              React.cloneElement(ButtonComponent, { mode, key: index })
+            )}
           </section>
         </section>
         <img className={`Project-image ${mode ? "Dark-mode-project-image-border" :"Light-mode-project-image-border" }`} src={image}></img>
