@@ -3,7 +3,7 @@ import '../css/linkButtons.css'
 
 import logoBlanco from '../assets/images/webWhite.png'
 import logoNegro from '../assets/images/webBlack.png'
-function WebButton({mode}) {
+function WebButton({mode, link}) {
   return (
     <a href='https://github.com/jepalfer' target='blank'>
         <button className={`Project-button ${mode ? "Dark-mode-project-button" : "Light-mode-project-button"}`}>

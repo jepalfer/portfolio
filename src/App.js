@@ -24,6 +24,7 @@ import CodeButton from './components/codeButton.jsx';
 import ReactTechnology from './components/reactTechnology.jsx';
 import DownloadButton from './components/downloadButton.jsx';
 import WebButton from './components/webButton.jsx';
+import FigmaTechnology from './components/figmaTechnology.jsx';
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -43,12 +44,12 @@ function App() {
   ];
 
   const technologies = [[<UnityTechnology mode={isDarkMode}/>], 
-                        [<ReactTechnology mode={isDarkMode}/>], 
+                        [<ReactTechnology mode={isDarkMode}/>, <FigmaTechnology mode={isDarkMode}/>], 
                         [<UnityTechnology mode={isDarkMode}/>]
   ];
   const buttons = [[<CodeButton mode={isDarkMode}/>, <WebButton mode={isDarkMode}/>],
-                   [<CodeButton mode={isDarkMode}/>],
-                   [<CodeButton mode={isDarkMode}/>]
+                   [<CodeButton mode={isDarkMode} link="https://github.com/jepalfer/portfolio/tree/master"/>],
+                   [<CodeButton mode={isDarkMode} link="https://github.com/jepalfer/minesweeper"/>]
 
   ];
   

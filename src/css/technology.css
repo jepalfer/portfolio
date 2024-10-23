@@ -61,3 +61,17 @@
     display: grid;
     grid-template-columns: 5% 20% 5% 70%;
 }
+
+
+.Project-button:hover {
+    transform: scale(1.05);
+    border-color: #E2725B;
+}
+
+.Project-button:hover img {
+    filter: invert(20%) sepia(28%) saturate(4828%) hue-rotate(321deg) brightness(93%) contrast(90%);
+}
+
+.Project-button:hover text {
+    color: #E2725B;
+}
