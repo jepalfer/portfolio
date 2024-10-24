@@ -9,7 +9,7 @@ function CvButton({mode}) {
         <button className={`CV-button Link-button Button-grid ${mode ? "Dark-mode-link-button" : "Light-mode-link-button"}`}>
             <div></div>
             <img className='Logo' src={`${mode ? logoBlanco : logoNegro}`} alt="Logo de CV"></img>
-            SUMMARY
+            RESUME
         </button>
     </a>
   )

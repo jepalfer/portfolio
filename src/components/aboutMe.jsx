@@ -4,6 +4,7 @@ import React from 'react'
 import Separator from './separator';
 import GithubButton from './githubButton';
 import CvButton from './cvButton';
+import LinkedinButton from './linkedinButton';
 
 function AboutMe({mode}) {
   return (
@@ -23,9 +24,14 @@ function AboutMe({mode}) {
       <Separator/>
       <section className="Buttons-grid">
         <GithubButton mode = {mode}/>
-        <section className="Vertical-separator">
+        <section id="Vertical-separator-1">
         </section>
         <CvButton mode = {mode}/>
+        <section id="Vertical-separator-2">
+        </section>
+        <section id="Vertical-separator-3">
+        </section>
+        <LinkedinButton mode={mode}/>
       </section>
 
     </section>
