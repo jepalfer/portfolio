@@ -1,4 +1,4 @@
-@media (max-width: 751px) {
+@media (max-width: 1033px) {
     .Grid-open{
       display: grid;
       grid-template-columns: 4.2% auto 8.1%;
