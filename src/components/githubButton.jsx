@@ -7,7 +7,7 @@ function GithubButton({mode}) {
     <a href='https://github.com/jepalfer' target='blank'>
         <button className={`Github-button Link-button Button-grid ${mode ? "Dark-mode-link-button" : "Light-mode-link-button"}`}>
             <img className='Logo' src={`${mode ? logoBlanco : logoNegro}`} alt="Logo de github"></img>
-                GITHUB
+            GITHUB
         </button>
     </a>
   )

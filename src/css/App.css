@@ -3,6 +3,10 @@
   grid-template-columns: 20% 4.2% auto 8.1%;
 }
 
+.Down-bar {
+  display: none;
+}
+
 .Grid-closed{
   display: grid;
   grid-template-columns: auto 8.1%;
@@ -18,6 +22,19 @@
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  .Grid-open{
+    display: grid;
+    grid-template-columns: 4.2% auto 8.1%;
+    grid-template-rows: 80% 20%;
+  }
+
+  .Down-bar {
+    display: inline-block;
+    background-color: #ff0000;
+  }
 }
 
 

@@ -31,3 +31,9 @@
 .Light-mode-side-bar {
   background-color: #111;
 }
+
+@media (max-width: 700px) {
+  .Side-bar{
+    display: none;
+  }
+}

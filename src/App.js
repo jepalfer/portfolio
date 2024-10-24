@@ -94,7 +94,7 @@ function App() {
         <section className={`${isOpen ? "Grid-open" : "Grid-closed"} ${isDarkMode ? "Dark-mode-grid" : "Light-mode-grid"}`}>
           <SideMenu mode={isDarkMode} open={isOpen} toggleDarkMode={toggleDarkMode} toggleOpenSideBar={toggleSideBar}/>
           <div></div>
-          <section>
+          <section className="Content">
             {/* About me */}
             <Separator/>
             <section>
@@ -135,6 +135,10 @@ function App() {
               <TitleSeparator/>
               {/* <Contact/> */}
             </section>
+          </section>
+
+          <section className="Down-bar">
+
           </section>
         </section>
       </header>
