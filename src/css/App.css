@@ -1,6 +1,7 @@
 .Grid-open{
   display: grid;
   grid-template-columns: 20% 4.2% auto 8.1%;
+  /* position: relative; */
 }
 
 .Down-bar {
@@ -24,17 +25,17 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 751px) {
   .Grid-open{
     display: grid;
     grid-template-columns: 4.2% auto 8.1%;
     grid-template-rows: 80% 20%;
   }
 
-  .Down-bar {
+  /* .Down-bar {
     display: inline-block;
     background-color: #ff0000;
-  }
+  } */
 }
 
 
