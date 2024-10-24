@@ -25,18 +25,6 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 751px) {
-  .Grid-open{
-    display: grid;
-    grid-template-columns: 4.2% auto 8.1%;
-    grid-template-rows: 80% 20%;
-  }
-
-  /* .Down-bar {
-    display: inline-block;
-    background-color: #ff0000;
-  } */
-}
 
 
 

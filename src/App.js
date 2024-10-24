@@ -1,6 +1,7 @@
 import './Fonts.css';
 import './css/App.css';
 import './css/projectCard.css'
+import './css/media.css'
 import SideMenu from './components/sideMenu.jsx';
 import AboutMe from './components/aboutMe.jsx';
 import SectionTitle from './components/sectionTitle.jsx';

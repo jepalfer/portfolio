@@ -23,6 +23,8 @@ function AboutMe({mode}) {
       <Separator/>
       <section className="Buttons-grid">
         <GithubButton mode = {mode}/>
+        <section className="Vertical-separator">
+        </section>
         <CvButton mode = {mode}/>
       </section>
 
