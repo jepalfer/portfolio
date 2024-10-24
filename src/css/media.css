@@ -7,7 +7,7 @@
 @media (min-width: 954px) {
     
 }
-@media (max-width: 700px) {
+@media (max-width: 700px) { /* Stretch screens */
     .Buttons-grid{
         display: grid;
         grid-template-columns: 100%;
@@ -31,7 +31,7 @@
     }
 }
 
-@media (min-width: 700px) and (max-width: 1385px) {
+@media (min-width: 700px) and (max-width: 1385px) { /* medium screens*/
 
     .Buttons-grid{
         display: grid;
@@ -52,7 +52,7 @@
     }
 }
 
-@media (max-width:1033px) {
+@media (max-width:1033px) { /* medium screens*/
     
     .Grid-open{
         display: grid;
@@ -64,7 +64,7 @@
       }
 }
 
-@media (min-width: 1385px) {
+@media (min-width: 1385px) { /*Big screens*/
 
     .Buttons-grid{
         display: grid;

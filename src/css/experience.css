@@ -10,11 +10,13 @@
     display: grid;
     padding-left: 2em;
     grid-template-columns: 5% auto;
+    height: 100%;
 }
 
 .Experience-content-grid {
     display: grid;
-    grid-template-rows: 15% 10% auto;
+    grid-template-rows: auto 10% 70%;
     /* align-items: start; */
-    margin-top: -30px;
+    
+    /* margin-top: -30px; */
 }
