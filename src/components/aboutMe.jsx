@@ -23,15 +23,21 @@ function AboutMe({mode}) {
       </p>
       <Separator/>
       <section className="Buttons-grid">
-        <GithubButton mode = {mode}/>
-        <section id="Vertical-separator-1">
-        </section>
-        <CvButton mode = {mode}/>
-        <section id="Vertical-separator-2">
-        </section>
-        <section id="Vertical-separator-3">
-        </section>
-        <LinkedinButton mode={mode}/>
+        <article id="Github-section">
+          <GithubButton mode = {mode}/>
+        </article>
+        <article id="Vertical-separator-1">
+        </article>
+        <article id="CV-section">
+          <CvButton mode = {mode}/>
+        </article>
+        <article id="Vertical-separator-2">
+        </article>
+        <article id="Vertical-separator-3">
+        </article>
+        <article id="Linkedin-section">
+          <LinkedinButton mode={mode}/>
+        </article>
       </section>
 
     </section>

@@ -2,14 +2,14 @@
     display: grid;
     grid-template-columns: 5% 20% 5% 70%;
     border-radius: 1em;
-    height: 75%;
-    width: 75%;
+    height: auto;
+    width: auto;
     align-items: center;
     /* justify-items: center; */
 }
 
 .Technology-text {
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'breeserif', serif;
 }
 

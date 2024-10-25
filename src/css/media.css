@@ -8,13 +8,25 @@
     
 }
 @media (max-width: 700px) { /* Stretch screens */
-    .Buttons-grid{
+    /* .Buttons-grid{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 20% 20% 20% 20% 20%;
         align-items: center;
         justify-items: center;
     }
+    #CV-section {
+        grid-column: 1;
+        grid-row: 5;
+        justify-self: center;
+        width: auto;
+    }
+    #Linkedin-section {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        width: auto;
+    } */
     /* .Down-bar {
       display: inline-block;
       background-color: #ff0000;
@@ -22,13 +34,13 @@
     #Vertical-separator-1 {
         display: inline-block;
     }
-    
+    /* 
     #Vertical-separator-2 {
         display: inline-block;
     }
     #Vertical-separator-3 {
         display: none;
-    }
+    } */
 }
 
 @media (min-width: 700px) and (max-width: 1385px) { /* medium screens*/
@@ -40,19 +52,27 @@
         align-items: center;
         justify-items: center;
     }
+
+    #CV-section {
+        grid-column: 1/3;
+        grid-row: 3;
+        justify-self: center;
+        width: auto;
+    }
+
     #Vertical-separator-1 {
         display: none;
     }
     
     #Vertical-separator-2 {
-        display: inline-block;
+        display: none;
     }
     #Vertical-separator-3 {
-        display: inline-block;
+        display: none;
     }
 }
 
-@media (max-width:1033px) { /* medium screens*/
+@media (max-width:1033px) or (max-aspect-ratio: 1/1){ /* medium screens*/
     
     .Grid-open{
         display: grid;
@@ -62,6 +82,25 @@
       .Side-bar{
           display: none;
       }
+      .Buttons-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        align-items: center;
+        justify-items: center;
+    }
+    #CV-section {
+        grid-column: 1;
+        grid-row: 5;
+        justify-self: center;
+        width: auto;
+    }
+    #Linkedin-section {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        width: auto;
+    }
 }
 
 @media (min-width: 1385px) { /*Big screens*/
