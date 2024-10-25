@@ -11,12 +11,14 @@
 .Technology-text {
     font-size: 1em;
     font-family: 'breeserif', serif;
+    grid-column: 4;
 }
 
 .Technology-logo {
     width: 95%;
     height: 95%;
     object-fit: scale-down;
+    grid-column: 2;
 }
 
 .Dark-mode-technology {
@@ -54,13 +56,14 @@
 }
 
 .Project-button {
-    width: 100%;
+    width: auto;
     height: 75%;
     border-radius: 1em;
     background-color: transparent;
     display: grid;
     grid-template-columns: 5% 20% 5% 70%;
 }
+
 
 
 .Project-button:hover {

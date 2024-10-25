@@ -1,3 +1,14 @@
+
+.Project-card {
+    grid-template-rows: auto 3% auto;
+}
+.Project-image {
+    grid-row: 3;
+    height: 85%;
+    width: 85%;
+    justify-self: center;
+    align-self: center;
+}
 @media (max-width: 953px) {
     
     
@@ -78,11 +89,11 @@
         display: grid;
         grid-template-columns: 4.2% auto 8.1%;
         grid-template-rows: 80% 20%;
-      }
-      .Side-bar{
+    }
+    .Side-bar{
           display: none;
-      }
-      .Buttons-grid{
+    }
+    .Buttons-grid{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 20% 20% 20% 20% 20%;
@@ -123,3 +134,17 @@
         display: none;
     }
 }
+
+@media (max-width: 1151px) {
+    
+}
+/* 
+@media (min-width: 1151px) {
+    .Project-card {
+        grid-template-columns: auto 2% auto;
+    }
+
+    .Project-image {
+        grid-column: 3;
+    }
+} */

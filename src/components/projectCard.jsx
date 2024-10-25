@@ -5,13 +5,15 @@ function ProjectCard({mode, title, image, text, technologies, buttons}) {
   return (
     <article className={`Project-card ${mode ? "Dark-mode-project-card" : "Light-mode-project-card"}`}>
         <section className="Project-content">
-          <text className="Title">
-            {title}
-          </text>
-          <section className="Project-technologies">
-            {technologies.map((TechnologyComponent, index) => 
-              React.cloneElement(TechnologyComponent, { mode, key: index })
-            )}
+          <section className="Project-card-top">
+            <text className="Title">
+              {title}
+            </text>
+            <section className="Project-technologies">
+              {technologies.map((TechnologyComponent, index) => 
+                React.cloneElement(TechnologyComponent, { mode, key: index })
+              )}
+            </section>
           </section>
 
           <article className={`Text ${mode ? "Dark-mode-project-text" : "Light-mode-project-text"}`}>

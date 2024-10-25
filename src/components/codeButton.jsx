@@ -6,9 +6,7 @@ function CodeButton({mode, link}) {
   return (
     <a href={link} target='blank'>
         <button className={`Project-button ${mode ? "Dark-mode-project-button" : "Light-mode-project-button"}`}>
-          <div></div>
           <img className='Technology-logo' src={`${mode ? logoNegro : logoBlanco}`} ></img>
-          <div></div>
           <text className={`Technology-text ${mode ? "Dark-mode-technology-button-text" : "Light-mode-technology-button-text"}`}>
             Código
           </text>
