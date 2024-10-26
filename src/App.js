@@ -26,7 +26,22 @@ import ReactTechnology from './components/reactTechnology.jsx';
 import DownloadButton from './components/downloadButton.jsx';
 import WebButton from './components/webButton.jsx';
 import FigmaTechnology from './components/figmaTechnology.jsx';
+import DownbarButton from './components/downbarButton.jsx';
 
+import aboutMeBlack from './assets/images/identificationBlack.png'
+import aboutMeWhite from './assets/images/identificationWhite.png'
+
+import experienceBlack from './assets/images/experienceBlack.png'
+import experienceWhite from './assets/images/experienceWhite.png'
+
+import projectsBlack from './assets/images/documentBlack.png'
+import projectsWhite from './assets/images/documentWhite.png'
+
+import contactBlack from './assets/images/contactBlack.png'
+import contactWhite from './assets/images/contactWhite.png'
+
+import darkModeBlack from './assets/images/darkBlack.png'
+import darkModeWhite from './assets/images/darkWhite.png'
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -79,7 +94,12 @@ function App() {
     setSelectedTechnologies(technologies[newIndex]);
     setSelectedButtons(buttons[newIndex]);
   }
-
+  function scrollToSection(section) {
+    const element = document.getElementById(section);
+    element?.scrollIntoView({
+        behavior: 'smooth'
+    });
+  }
 
   const toggleSideBar = () => {
     setIsOpen(!isOpen);
@@ -118,12 +138,14 @@ function App() {
               <SectionTitle nombre="MIS PROYECTOS"/>
               <TitleSeparator/>
               <section className="Project-cards-grid">
-                <button className="Change-project-button" onClick={() => changeProject(index - 1)}>
+                <button id="Left-arrow-project" className="Change-project-button" onClick={() => changeProject(index - 1)}>
                   <img src={`${isDarkMode ? previousProjectWhite : previousProjectBlack}`}></img>
                 </button>
-                <ProjectCard mode = {isDarkMode} title={selectedTitle} image={selectedImage} text={selectedText} 
-                technologies={selectedTechnologies} buttons={selectedButtons}/>
-                <button className="Change-project-button" onClick={() => changeProject(index + 1)}>
+                <section id="Project-card-render">
+                  <ProjectCard mode = {isDarkMode} title={selectedTitle} image={selectedImage} text={selectedText} 
+                  technologies={selectedTechnologies} buttons={selectedButtons}/>
+                </section>
+                <button id="Right-arrow-project" className="Change-project-button" onClick={() => changeProject(index + 1)}>
                   <img src={`${isDarkMode ? nextProjectWhite : nextProjectBlack}`}></img>
                 </button>
               </section>
@@ -138,8 +160,27 @@ function App() {
             </section>
           </section>
 
-          <section className="Down-bar">
-
+          <section className={`Down-bar ${isDarkMode ? "Dark-mode-down-bar" : "Light-mode-down-bar"}`}>
+            {/* <button className="Down-bar-button" onClick={() => scrollToSection("#about")}>
+              <img src={`${isDarkMode ? aboutMeBlack : aboutMeWhite}`}></img>
+            </button>
+            <button className="Down-bar-button" onClick={() => scrollToSection("#experience")}>
+              <img src={`${isDarkMode ? experienceBlack : experienceWhite}`}></img>
+            </button>
+            <button className="Down-bar-button" onClick={() => scrollToSection("#projects")}>
+              <img src={`${isDarkMode ? projectsBlack : projectsWhite}`}></img>
+            </button>
+            <button className="Down-bar-button" onClick={() => scrollToSection("#contact")}>
+              <img src={`${isDarkMode ? contactBlack : contactWhite}`}></img>
+            </button>
+            <button className="Down-bar-button" onClick={() => toggleDarkMode()}>
+              <img src={`${isDarkMode ? darkModeBlack : darkModeWhite}`}></img>
+            </button> */}
+            <DownbarButton imagen={`${isDarkMode ? aboutMeBlack : aboutMeWhite}`} onClickFunction={() => scrollToSection("#about")}/>
+            <DownbarButton imagen={`${isDarkMode ? experienceBlack : experienceWhite}`} onClickFunction={() => scrollToSection("#experience")}/>
+            <DownbarButton imagen={`${isDarkMode ? projectsBlack : projectsWhite}`} onClickFunction={() => scrollToSection("#projects")}/>
+            <DownbarButton imagen={`${isDarkMode ? contactBlack : contactWhite}`} onClickFunction={() => scrollToSection("#contact")}/>
+            <DownbarButton imagen={`${isDarkMode ? darkModeBlack : darkModeWhite}`} onClickFunction={() => toggleDarkMode()}/>
           </section>
         </section>
       </header>

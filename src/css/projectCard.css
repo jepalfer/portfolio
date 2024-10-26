@@ -72,12 +72,6 @@
     color: #eee;
 }
 
-.Project-cards-grid {
-    display: grid;
-    grid-template-columns: 5% auto 5%;
-    align-items: center;
-    justify-items: center;
-}
 
 .Project-image {
     width: auto;

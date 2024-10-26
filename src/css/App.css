@@ -1,18 +1,19 @@
-.Grid-open{
-  display: grid;
-  grid-template-columns: 20% 4.2% auto 8.1%;
-  /* position: relative; */
-}
-
-.Down-bar {
-  display: none;
-}
-
 .Grid-closed{
   display: grid;
   grid-template-columns: auto 8.1%;
 }
-
+.Down-bar-button-img {
+  width: 5em;
+  height: 5em;
+}
+button {
+  border: 0;
+  background-color: transparent;
+}
+.Down-bar-button {
+  height: 90%;
+  width: 90%;
+}
 .Dark-mode-grid {
   background: #111111;
 }
