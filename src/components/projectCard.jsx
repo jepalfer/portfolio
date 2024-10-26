@@ -6,9 +6,9 @@ function ProjectCard({mode, title, image, text, technologies, buttons}) {
     <article className={`Project-card ${mode ? "Dark-mode-project-card" : "Light-mode-project-card"}`}>
         <section className="Project-content">
           <section className="Project-card-top">
-            <text className="Title">
+            <h2 className="Title">
               {title}
-            </text>
+            </h2>
             <section className="Project-technologies">
               {technologies.map((TechnologyComponent, index) => 
                 React.cloneElement(TechnologyComponent, { mode, key: index })

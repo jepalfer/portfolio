@@ -56,6 +56,7 @@
 }
 
 .Project-button {
+    transition: transform 0.3s ease, border-color 0.3s ease;
     width: auto;
     height: 75%;
     border-radius: 1em;
@@ -65,16 +66,28 @@
 }
 
 
+.Dark-mode-project-button:hover {
+    background-color: #111;
+    border-color: #111;
+}
+.Dark-mode-project-button:hover text {
+    color: #eee;
+}
+.Light-mode-project-button:hover {
 
-.Project-button:hover {
-    transform: scale(1.05);
-    border-color: #E2725B;
+    background-color: #eee;
+    border-color: #eee;
+    color: #111;
+}
+
+.Light-mode-project-button:hover text {
+    color: #111;
 }
 
 .Project-button:hover img {
-    filter: invert(20%) sepia(28%) saturate(4828%) hue-rotate(321deg) brightness(93%) contrast(90%);
+    filter: invert(100%);
 }
 
-.Project-button:hover text {
-    color: #E2725B;
+.Project-button:hover {
+    transform: scale(1.05);
 }

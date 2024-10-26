@@ -3,9 +3,9 @@ import React from 'react'
 
 function SectionTitle({nombre}) {
   return (
-    <text className="Title">
+    <h1 className="Title">
         {nombre}
-    </text>
+    </h1>
   )
 }
 

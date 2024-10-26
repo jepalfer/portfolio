@@ -9,6 +9,11 @@
     width: 100%;
     height: 100%;
 }
+
+.Link-button img {
+    
+    transition: filter 0.3s ease;
+}
 .Dark-mode-link-button {
     border: 0.1em solid #eeeeee;
     color: #eeeeee;
@@ -51,14 +56,27 @@
     height: 1.25em;  
 }
 */
-.Link-button:hover {
-    transform: scale(1.05);
-    border-color: #E2725B;
-    color: #E2725B;
+
+.Dark-mode-link-button:hover {
+    background-color: #eee;
+    border-color: #eee;
+    color: #111;
 }
 
+.Light-mode-link-button:hover {
+
+    background-color: #111;
+    border-color: #111;
+    color: #eee;
+}
+
+
 .Link-button:hover img {
-    filter: invert(20%) sepia(28%) saturate(4828%) hue-rotate(321deg) brightness(93%) contrast(90%);
+    filter: invert(100%);
+}
+
+.Link-button:hover {
+    transform: scale(1.05);
 }
 
 

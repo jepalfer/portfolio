@@ -8,9 +8,9 @@ function Experience({mode}) {
     <section className="Experience-grid">
         <img className="Experience-indicator" src={`${mode ? whiteExperience : blackExperience}`}></img>
         <section className="Experience-content-grid">
-            <text className={`Title`}>
+            <h2 className={`Title`}>
                 ORGANIZADOR DE EVENTOS
-            </text>
+            </h2>
 
             <text className={`Text  ${mode ? "Dark-mode-experience-text" : "Light-mode-experience-text"}`}>
                 UGR LAN Party, Granada | Septiembre 2023 - Actual
@@ -31,9 +31,9 @@ function Experience({mode}) {
         </section>
         <img className="Experience-indicator" src={`${mode ? whiteExperience : blackExperience}`}></img>
         <section className="Experience-content-grid">
-            <text className={`Title`}>
+            <h2 className={`Title`}>
                 PROGRAMADOR DE APLICACIÓN MÓVIL
-            </text>
+            </h2>
 
             <text className={`Text ${mode ? "Dark-mode-experience-text" : "Light-mode-experience-text"}`}>
                 Colegio San Rafael, Granada | Octubre 2023 - Enero 2024
